@@ -1,0 +1,8 @@
+<table><tr>
+<td><ul>
+    <li ng-repeat="item in $ctrl.items" >
+      <a ui-sref="mainList.menus({category:item.short_name})">{{ item.name }}({{ item.short_name }})</a> 
+    </li>
+</ul></td>
+<td><ui-view></ui-view></td>
+</tr></table>
